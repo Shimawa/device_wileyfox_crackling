@@ -49,7 +49,7 @@ dalvik.vm.heapminfree=512k
 dalvik.vm.heapmaxfree=8m
 
 # Display
-ro.sf.lcd_density=320
+ro.sf.lcd_density=280
 debug.hwui.use_buffer_age=false
 debug.composition.type=c2d
 debug.mdpcomp.idletime=600
