@@ -25,6 +25,11 @@ TARGET_NO_BOOTLOADER := true
 # APEX
 TARGET_FLATTEN_APEX := true
 
+# Dexpreopt
+WITH_DEXPREOPT_DEBUG_INFO := false
+USE_DEX2OAT_DEBUG := false
+DONT_DEXPREOPT_PREBUILTS := true
+
 # Architecture
 ifneq ($(FORCE_32_BIT),true)
 TARGET_ARCH := arm64
@@ -136,7 +141,6 @@ TARGET_KERNEL_SOURCE := kernel/wileyfox/crackling
 
 # Manifest
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
-DEVICE_MATRIX_FILE := $(DEVICE_PATH)/compatibility_matrix.xml
 
 # Media
 TARGET_USES_MEDIA_EXTENSIONS := true
